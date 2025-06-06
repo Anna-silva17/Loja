@@ -9,7 +9,7 @@
        }
        /* Cabeçalho */
        header {
-           background: linear-gradient(90deg, #007bff, #00d4ff);
+           background: linear-gradient(90deg, #6503a7, #af57ed);
            color: white;
            padding: 20px;
            text-align: center;
@@ -30,7 +30,7 @@
            width: 90%;
            margin: 10px auto;
            padding: 15px;
-           background: #007bff;
+           background: #6503a7;
            border: none;
            color: white;
            font-size: 18px;
@@ -39,7 +39,7 @@
            transition: 0.3s;
        }
        .menu button:hover {
-           background: #0056b3;
+           background: #8000b3;
        }
        /* Conteúdo */
        .content {
