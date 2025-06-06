@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loja Profissional</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Cabeçalho -->
+<header>Minha Loja Profissional</header>
+<!-- Menu Lateral -->
+<div class="menu">
+<button onclick="showPage('home')">Início</button>
+<button onclick="showPage('products')">Produtos</button>
+<button onclick="showPage('cart')">Carrinho</button>
+<button onclick="showPage('payment')">Pagamento</button>
+<button onclick="showPage('admin')">Administração</button>
+</div>
+<!-- Conteúdo -->
+<div class="content">
+<!-- Página Inicial -->
+<section id="home" class="active">
+<h2>Bem-vindo à Nossa Loja!</h2>
+<p>Confira os melhores produtos com ofertas incríveis.</p>
+</section>
+<!-- Página de Produtos -->
+<section id="products">
+<h2>Produtos</h2>
+<div class="products" id="product-list"></div>
+</section>
+<!-- Página do Carrinho -->
+<section id="cart">
+<h2>Seu Carrinho</h2>
+<ul id="cart-items"></ul>
+<button onclick="showPage('payment')">Finalizar Compra</button>
+</section>
+<!-- Página de Pagamento -->
+<section id="payment">
+<h2>Pagamento</h2>
+<button onclick="finalizePurchase('Cartão de Crédito')">Cartão de Crédito</button>
+<button onclick="finalizePurchase('Boleto')">Boleto</button>
+<button onclick="finalizePurchase('Pix')">Pix</button>
+</section>
+<!-- Painel de Administração -->
+<section id="admin">
+<h2>Painel de Administração</h2>
+<input type="text" id="admin-name" placeholder="Nome do Produto">
+<input type="number" id="admin-price" placeholder="Preço">
+<input type="url" id="admin-img" placeholder="URL da Imagem">
+<button onclick="addProduct()">Adicionar Produto</button>
+</section>
+</div>
+<script src="script.js">
+</script>
+</body>
+</html>
